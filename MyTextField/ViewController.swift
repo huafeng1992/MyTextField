@@ -13,14 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 忽略 DS_Store 文件
-        // 本地主分支提交
         
+<<<<<<< HEAD
         // 第一次用Xcode提交
         
         // MyTextField1 huafeng
         
         
+=======
+>>>>>>> refs/remotes/origin/master
     }
 
     override func didReceiveMemoryWarning() {
