@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D94B89CAC4513D6F1CEC1A6 /* Pods_MyTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */; };
 		DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C12192015E4B70057A499 /* AppDelegate.swift */; };
 		DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C121B2015E4B70057A499 /* ViewController.swift */; };
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
 		DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12202015E4B70057A499 /* Assets.xcassets */; };
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
-		DCD25262201711E500B33614 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD25261201711E500B33614 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBE177C317AE2786843C054 /* Pods-MyTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.release.xcconfig"; sourceTree = "<group>"; };
+		D2257E5BE6E3E6D36C040326 /* Pods-MyTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.debug.xcconfig"; sourceTree = "<group>"; };
 		DC4C12162015E4B70057A499 /* MyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C12192015E4B70057A499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C121B2015E4B70057A499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +26,6 @@
 		DC4C12202015E4B70057A499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD25261201711E500B33614 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D94B89CAC4513D6F1CEC1A6 /* Pods_MyTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		093FB64D137B379260BFB172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAF869D47678D9838C9345A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2257E5BE6E3E6D36C040326 /* Pods-MyTextField.debug.xcconfig */,
+				5CBE177C317AE2786843C054 /* Pods-MyTextField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC4C120D2015E4B70057A499 = {
 			isa = PBXGroup;
 			children = (
 				DC4C12182015E4B70057A499 /* MyTextField */,
 				DC4C12172015E4B70057A499 /* Products */,
+				CEAF869D47678D9838C9345A /* Pods */,
+				093FB64D137B379260BFB172 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +80,6 @@
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
-				DCD25261201711E500B33614 /* test.swift */,
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
 				DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */,
@@ -74,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC4C12282015E4B70057A499 /* Build configuration list for PBXNativeTarget "MyTextField" */;
 			buildPhases = (
+				10A0CB6EBC1B66F5E9B42B7F /* [CP] Check Pods Manifest.lock */,
 				DC4C12122015E4B70057A499 /* Sources */,
 				DC4C12132015E4B70057A499 /* Frameworks */,
 				DC4C12142015E4B70057A499 /* Resources */,
+				C6C81BC00A3E8A8C85D71370 /* [CP] Embed Pods Frameworks */,
+				8888952EEB4990615CCCB3D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +158,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10A0CB6EBC1B66F5E9B42B7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8888952EEB4990615CCCB3D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C81BC00A3E8A8C85D71370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC4C12122015E4B70057A499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
-				DCD25262201711E500B33614 /* test.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -276,6 +350,7 @@
 		};
 		DC4C12292015E4B70057A499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2257E5BE6E3E6D36C040326 /* Pods-MyTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +366,7 @@
 		};
 		DC4C122A2015E4B70057A499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBE177C317AE2786843C054 /* Pods-MyTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
