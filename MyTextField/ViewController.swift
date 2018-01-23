@@ -13,13 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 第一次用Xcode提交
-        // 创建分支
-        // 主分支提交的
-        // iss53中提交的 shitijiaode
-        // MyTextField 提交
-        
-        
+        // 忽略 DS_Store 文件
+        // 本地主分支提交
         
     }
 
