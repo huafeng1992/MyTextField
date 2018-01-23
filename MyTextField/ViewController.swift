@@ -14,14 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-<<<<<<< HEAD
-        // 第一次用Xcode提交
         
-        // MyTextField1 huafeng
-        
-        
-=======
->>>>>>> refs/remotes/origin/master
     }
 
     override func didReceiveMemoryWarning() {

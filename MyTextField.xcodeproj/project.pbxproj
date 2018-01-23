@@ -12,7 +12,6 @@
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
 		DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12202015E4B70057A499 /* Assets.xcassets */; };
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
-		DCD252602016CF8700B33614 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2525F2016CF8700B33614 /* First.swift */; };
 		DCD25262201711E500B33614 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD25261201711E500B33614 /* test.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		DC4C12202015E4B70057A499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD2525F2016CF8700B33614 /* First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
 		DCD25261201711E500B33614 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,11 +58,7 @@
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
-<<<<<<< HEAD
 				DCD25261201711E500B33614 /* test.swift */,
-				DCD2525F2016CF8700B33614 /* First.swift */,
-=======
->>>>>>> refs/remotes/origin/master
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
 				DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */,
