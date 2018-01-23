@@ -26,11 +26,8 @@
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD25261201711E500B33614 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		DCD25265201714F900B33614 /* textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
-=======
 		DCD25263201714E800B33614 /* textfield1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield1.swift; sourceTree = "<group>"; };
->>>>>>> refs/remotes/origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +63,8 @@
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
 				DCD25261201711E500B33614 /* test.swift */,
-<<<<<<< HEAD
 				DCD25265201714F900B33614 /* textfield.swift */,
-=======
 				DCD25263201714E800B33614 /* textfield1.swift */,
->>>>>>> refs/remotes/origin/master
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
 				DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */,
