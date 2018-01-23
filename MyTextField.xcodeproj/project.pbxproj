@@ -14,7 +14,6 @@
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
 		DCD25262201711E500B33614 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD25261201711E500B33614 /* test.swift */; };
 		DCD25266201714F900B33614 /* textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD25265201714F900B33614 /* textfield.swift */; };
-		DCD25264201714E800B33614 /* textfield1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD25263201714E800B33614 /* textfield1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD25261201711E500B33614 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		DCD25265201714F900B33614 /* textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield.swift; sourceTree = "<group>"; };
-		DCD25263201714E800B33614 /* textfield1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
 				DCD25261201711E500B33614 /* test.swift */,
 				DCD25265201714F900B33614 /* textfield.swift */,
-				DCD25263201714E800B33614 /* textfield1.swift */,
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
 				DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */,
@@ -146,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
-				DCD25264201714E800B33614 /* textfield1.swift in Sources */,
 				DCD25262201711E500B33614 /* test.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 				DCD25266201714F900B33614 /* textfield.swift in Sources */,
