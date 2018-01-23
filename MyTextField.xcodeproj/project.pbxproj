@@ -13,6 +13,7 @@
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
 		DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12202015E4B70057A499 /* Assets.xcassets */; };
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
+		DCD2526E20172D5F00B33614 /* AfterAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2526D20172D5F00B33614 /* AfterAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DC4C12202015E4B70057A499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD2526D20172D5F00B33614 /* AfterAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				DCD2526D20172D5F00B33614 /* AfterAdd.swift */,
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
 				DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD2526E20172D5F00B33614 /* AfterAdd.swift in Sources */,
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 			);
