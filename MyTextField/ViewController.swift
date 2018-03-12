@@ -13,12 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-  
+        
+        print("这是一条测试")
         print(GetDate.getCurrentMonth())
     }
     
     @objc func btnAction(btn: UIButton) {
-//        jumAction()
+
+        print("这是一条测试2")
     }
     
     func jumAction() {

@@ -8,3 +8,10 @@
 
 import Foundation
 
+class Test {
+    
+    func test() {
+        print("这是一条测试3")
+    }
+}
+
