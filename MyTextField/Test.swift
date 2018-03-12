@@ -11,7 +11,7 @@ import Foundation
 class Test {
     
     func test() {
-//        print("测试")
+        
     }
 }
 
