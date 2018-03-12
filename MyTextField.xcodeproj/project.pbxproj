@@ -13,6 +13,8 @@
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
 		DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12202015E4B70057A499 /* Assets.xcassets */; };
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
+		DCADA3DE205622FC00A64D5A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA3DD205622FC00A64D5A /* Test.swift */; };
+		DCADA3E02056239F00A64D5A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA3DF2056239F00A64D5A /* Utils.swift */; };
 		DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95B202078F200B5DCCB /* ChartsModel.swift */; };
 		DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95C202078F200B5DCCB /* ChartsView.swift */; };
 		DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95D202078F200B5DCCB /* ChartsViewController.swift */; };
@@ -29,6 +31,8 @@
 		DC4C12202015E4B70057A499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCADA3DD205622FC00A64D5A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		DCADA3DF2056239F00A64D5A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DCADA95B202078F200B5DCCB /* ChartsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsModel.swift; sourceTree = "<group>"; };
 		DCADA95C202078F200B5DCCB /* ChartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		DCADA95D202078F200B5DCCB /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				DCADA3DD205622FC00A64D5A /* Test.swift */,
+				DCADA3DF2056239F00A64D5A /* Utils.swift */,
 				DCADA95A202078F200B5DCCB /* Charts */,
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
@@ -237,8 +243,10 @@
 				DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */,
 				DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */,
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
+				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 				DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */,
+				DCADA3DE205622FC00A64D5A /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
