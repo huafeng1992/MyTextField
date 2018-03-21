@@ -41,6 +41,7 @@ struct GetDate {
         return todayDate!
     }
     
+    // 获取日期 num为天数
     static func getToDayToDays(num: Int) -> Date {
         let timeInvel = getToDay().timeIntervalSince1970
         let newTimeInvel = timeInvel + Double(60 * 60 * 24 * num)
@@ -48,6 +49,7 @@ struct GetDate {
         return date
     }
     
+    // 获取日期 num为天数
     static func getNowToDays(num: Int) -> Date {
         let timeInvel = getNow().timeIntervalSince1970
         let newTimeInvel = timeInvel + Double(60 * 60 * 24 * num)
@@ -55,16 +57,107 @@ struct GetDate {
         return date
     }
     
+    // 获取时间戳
     static func getInterval(_ date: Date) -> TimeInterval {
         let newdate = getGMTTimeZone(date)
         let timeInterval = newdate.timeIntervalSince1970
         return timeInterval
     }
     
+    // 获取当前月
     static func getCurrentMonth() -> String {
-        let dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "MM"
-        dateFomatter.timeZone = TimeZone.init(abbreviation: "GMT")
-        return dateFomatter.string(from: getNow())
+//        let dateFomatter = DateFormatter()
+//        dateFomatter.dateFormat = DateFormatterChar.Month.rawValue
+//        dateFomatter.timeZone = TimeZone.init(abbreviation: "GMT")
+        let calendar = Calendar.current
+        let commponents = calendar.dateComponents([.month], from: getNow())
+        return "\(commponents.month ?? 0)"
     }
+    
+    static func getCurrentYear() -> String {
+        let calendar = Calendar.current
+        let commponents = calendar.dateComponents([.year], from: getNow())
+        return "\(commponents.year ?? 0)"
+    }
+}
+
+extension GetDate {
+    
+    enum DateFormatterChar: String {
+        case Month = "MM"
+        case YearMonthDay = "yyyy-MM-dd"
+        case YearMonthDayAndTime = "yyyy-MM-dd HH:mm:ss"
+    }
+    
+    static func getCalendar() -> Calendar {
+        var calendar = Calendar.current
+        calendar.firstWeekday = 2
+//        calendar.minimumDaysInFirstWeek = 7
+        calendar.timeZone = TimeZone.init(abbreviation: "GMT")!
+        
+        return calendar
+    }
+    
+    static func getInterval(dateStr: String, dateFormatStr: DateFormatterChar) -> TimeInterval? {
+        
+        let dateFormat = DateFormatter()
+        dateFormat.timeZone = TimeZone.init(abbreviation: "GMT")
+        dateFormat.dateFormat = dateFormatStr.rawValue
+        let date = dateFormat.date(from: dateStr)
+        return date?.timeIntervalSince1970
+    }
+    
+    // WeekDay 处理
+    static func getWeekday(_ date: Date) -> Int? {
+        let calendar = getCalendar()
+        let commponents = calendar.dateComponents([.weekday], from: date)
+        if commponents.weekday == nil {
+            return nil
+        } else {
+            // commponents.weekday 获取到的week 一般会以星期天为1，那么需要处理-1
+            var rtnNum = commponents.weekday! - 1
+            if rtnNum == 0 {
+                rtnNum = 7
+            }
+            return rtnNum
+        }
+    }
+    
+    static func getWeekday(_ dateStr: String) -> Int? {
+        
+        let dateFormat = DateFormatter()
+        dateFormat.timeZone = TimeZone.init(abbreviation: "GMT")
+        dateFormat.dateFormat = DateFormatterChar.YearMonthDay.rawValue
+        let date = dateFormat.date(from: dateStr)
+        if date == nil {
+            return nil
+        } else {
+            return getWeekday(date!)
+        }
+    }
+    
+    static func weekInString<T>(weekStr: String, date: T) -> Bool {
+        
+        if date is String {
+            
+            print("日期字符")
+        } else if date is Date{
+            print("日期对象")
+        } else {
+            print("类型错误")
+            return false
+        }
+        
+        
+        // weekStr: 1,2,3,4,5,6,7 使用字符串区分星期
+//        weekStr.rangeOfCharacter(from: <#T##CharacterSet#>)
+        
+        
+        
+        return true
+    }
+    
+    
+    
+    
 }

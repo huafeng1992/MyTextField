@@ -8,7 +8,13 @@
 
 import Foundation
 
-class Test {
+class Test: ViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
+    }
     
     func test() {
         

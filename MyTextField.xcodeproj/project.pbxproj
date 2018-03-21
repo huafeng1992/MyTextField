@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D94B89CAC4513D6F1CEC1A6 /* Pods_MyTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */; };
+		DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */; };
+		DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3542392058EDDD0015F78D /* RXBaseViewController.swift */; };
+		DC42F3AB205BA19C0076004F /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42F3AA205BA19C0076004F /* Codable.swift */; };
 		DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C12192015E4B70057A499 /* AppDelegate.swift */; };
 		DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C121B2015E4B70057A499 /* ViewController.swift */; };
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
@@ -18,12 +21,16 @@
 		DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95B202078F200B5DCCB /* ChartsModel.swift */; };
 		DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95C202078F200B5DCCB /* ChartsView.swift */; };
 		DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95D202078F200B5DCCB /* ChartsViewController.swift */; };
+		DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF179205B61B800536621 /* HFAlamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBE177C317AE2786843C054 /* Pods-MyTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.release.xcconfig"; sourceTree = "<group>"; };
 		D2257E5BE6E3E6D36C040326 /* Pods-MyTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigherOrderFunction.swift; sourceTree = "<group>"; };
+		DC3542392058EDDD0015F78D /* RXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXBaseViewController.swift; sourceTree = "<group>"; };
+		DC42F3AA205BA19C0076004F /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		DC4C12162015E4B70057A499 /* MyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C12192015E4B70057A499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C121B2015E4B70057A499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		DCADA95B202078F200B5DCCB /* ChartsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsModel.swift; sourceTree = "<group>"; };
 		DCADA95C202078F200B5DCCB /* ChartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		DCADA95D202078F200B5DCCB /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		DCFDF179205B61B800536621 /* HFAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAlamofire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC42F3A9205BA17C0076004F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */,
+				DC42F3AA205BA19C0076004F /* Codable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		DC4C120D2015E4B70057A499 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
+				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				DC42F3A9205BA17C0076004F /* Util */,
+				DCFDF178205B619700536621 /* Alamofire */,
 				DCADA3DD205622FC00A64D5A /* Test.swift */,
 				DCADA3DF2056239F00A64D5A /* Utils.swift */,
 				DCADA95A202078F200B5DCCB /* Charts */,
@@ -109,6 +129,14 @@
 				DCADA95D202078F200B5DCCB /* ChartsViewController.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		DCFDF178205B619700536621 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				DCFDF179205B61B800536621 /* HFAlamofire.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,11 +250,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,9 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */,
+				DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */,
+				DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */,
 				DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */,
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,
+				DC42F3AB205BA19C0076004F /* Codable.swift in Sources */,
+				DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 				DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */,
 				DCADA3DE205622FC00A64D5A /* Test.swift in Sources */,
@@ -386,9 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -403,9 +440,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
