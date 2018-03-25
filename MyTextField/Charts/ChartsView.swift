@@ -24,14 +24,38 @@ class ChartsView: UIView {
         
         print("func draw(_ rect: CGRect)", rect)
         
-        guard let ctx: CGContext = UIGraphicsGetCurrentContext() else { return }
-        ctx.addLines(between: [.init(x: topBottomMas, y: topBottomMas),
-                               .init(x: topBottomMas, y: height - topBottomMas)])
-        ctx.addLines(between: [.init(x: topBottomMas, y: height - topBottomMas),
-                               .init(x: width - topBottomMas, y: height - topBottomMas)])
-        ctx.setLineWidth(2)
-        ctx.setStrokeColor(UIColor.yellow.cgColor)
-        ctx.drawPath(using: .fillStroke)
+        let ctx: CGContext? = UIGraphicsGetCurrentContext()
+        ctx?.setFillColor(UIColor.red.cgColor)
+        ctx?.setStrokeColor(UIColor.yellow.cgColor)
+        
+        
+        var rectArr: Array<CGRect> = []
+        
+        for i in 1..<6 {
+            rectArr.append(.init(x: 20 * i, y: 50, width: 10, height: 100))
+        }
+        ctx?.addRects(rectArr)
+        ctx?.drawPath(using: .fillStroke)
+        UIGraphicsEndImageContext()
+//        ctx?.strokePath()
+        
+//        rectangle.size.width = rectangle.size.width + 10
+//        rectangle.size.height = rectangle.size.height + 10
+//        if rectangle.size.width >= rect.width-20 {
+//           rectangle.size.width = rect.width - 20
+//        }
+//        if rectangle.size.height >= rect.height-20 {
+//           rectangle.size.height = rect.height - 20
+//        }
+//
+//        if ctx != nil {
+//            ctx!.setFillColor(UIColor.red.cgColor)
+//            ctx!.setStrokeColor(UIColor.yellow.cgColor)
+//            ctx!.setLineWidth(2)
+//            ctx!.addRect(rectangle)
+//            ctx!.drawPath(using: .fillStroke)
+//            UIGraphicsEndImageContext()
+//        }
     }
 }
 
