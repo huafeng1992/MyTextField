@@ -56,26 +56,16 @@ class ViewController: UIViewController {
 //                "Character count: \($0)"
 //            }
 //            .drive(textLabel.rx.text).disposed(by: disposeBag)
+        
+        
+        
     }
     
     @objc func btnAction(btn: UIButton) {
-//        HigherOrderFunction.test()
-//        HFAlamofire.start()
-//        CodableTest.start()
         
         
-//        print(GetDate.getCurrentYear())
-//        print(GetDate.getCurrentMonth())
-        
-//        print("week:" ,GetDate.getWeekday("2018-03-17")!)
-//        print(GetDate.date())
-        
-//        GetDate.getInterval(dateStr: "2018-03-20", dateFormatStr: .YearMonthDay)
-//        GetDate.date()
-        
-        print(GetDate.weekInString(weekStr: "1,3,4", date: Date()))
-        
-
+        let protocolVC = ProtocolViewController()
+        show(protocolVC, sender: nil)
         
     }
 

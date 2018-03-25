@@ -11,6 +11,7 @@
 		DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */; };
 		DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3542392058EDDD0015F78D /* RXBaseViewController.swift */; };
 		DC42F3AB205BA19C0076004F /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42F3AA205BA19C0076004F /* Codable.swift */; };
+		DC447AE72067EC7500E27AE4 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC447AE62067EC7500E27AE4 /* Protocol.swift */; };
 		DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C12192015E4B70057A499 /* AppDelegate.swift */; };
 		DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C121B2015E4B70057A499 /* ViewController.swift */; };
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigherOrderFunction.swift; sourceTree = "<group>"; };
 		DC3542392058EDDD0015F78D /* RXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXBaseViewController.swift; sourceTree = "<group>"; };
 		DC42F3AA205BA19C0076004F /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		DC447AE62067EC7500E27AE4 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		DC4C12162015E4B70057A499 /* MyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C12192015E4B70057A499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC4C121B2015E4B70057A499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		DC447AE52067EC3400E27AE4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DC447AE62067EC7500E27AE4 /* Protocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		DC4C120D2015E4B70057A499 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				DC447AE52067EC3400E27AE4 /* Protocol */,
 				DC42F3A9205BA17C0076004F /* Util */,
 				DCFDF178205B619700536621 /* Alamofire */,
 				DCADA3DD205622FC00A64D5A /* Test.swift */,
@@ -283,6 +294,7 @@
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
 				DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */,
 				DCADA3DE205622FC00A64D5A /* Test.swift in Sources */,
+				DC447AE72067EC7500E27AE4 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
