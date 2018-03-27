@@ -17,6 +17,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         // 提交测试
         setMainUI(view: view)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidResume, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidSuspend, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidCancel, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidComplete, object: nil)
+    }
+    
+    func notificationAction(notifi: Notification) {
+        print(notifi.name)
     }
     
     func setMainUI(view: UIView) {

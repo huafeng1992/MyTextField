@@ -9,11 +9,15 @@
 import Foundation
 import Alamofire
 
-extension Error {
-    var sendDesc: String {
-        return "没有数据"
-    }
+
+extension Notification.Key {
+    
+    public static let UUID = "UUID"
+    
 }
+
+
+
 
 struct HFAlamofire {
     
@@ -22,87 +26,74 @@ struct HFAlamofire {
     static func start() {
         
         print("开始")
-
-        send()
+        
+        send(url: "https://httpbin.org/post ", parameters: nil, headers: nil)
+        
     }
 }
-
-var manger:SessionManager? = nil
 
 extension HFAlamofire {
-
-    func sendRequest(url: String) {
-        Alamofire.request(url).response { response in
-            print(response)
-        }
-    }
     
-    static func send() {
-        
-//        let urlStr = "https://www.baidu.com/"
-        
-//        Alamofire.request("https://httpbin.org/get").responseJSON { response in
-////            print(response.request!)  // original URL request
-////            print(response.response!) // HTTP URL response
-////            print(response.data!)     // server data
-////            print(response.result)   // result of response serialization
-//
-//            if let JSON = response.result.value {
-//                print("JSON: \(JSON)")
-//            }
-//
-//            debugPrint(response.result.isSuccess)
-//
-//        }
-        
-//        let request = NSURLRequest.init(url: URL.init(string: urlStr)!)
-        
-//        let url = URL.init(string: urlStr)
-//
-//        let config: URLSessionConfiguration = URLSessionConfiguration.default
-//
-//        manger = SessionManager.init(configuration: config, delegate: SessionDelegate.init(), serverTrustPolicyManager: ServerTrustPolicyManager?)
-//
-//        request(url!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate { (request, response, data) -> Request.ValidationResult in
-//
-////            print(data)
-//            return .success
-//        }
-//            .responseJSON { (response) in
-//            debugPrint(response)
-//        }
-        
+    /// 自定义配置请求
+    @discardableResult
+    static func send(url: URLConvertible, parameters: Parameters?, headers: HTTPHeaders?) -> DataRequest {
+        return linkServering(url: url, method: .post, parameters: parameters, headers: headers).responseJSON(completionHandler: { (response) in
+            switch response.result {
+            case .success(let value):
+                print(value)
+            case .failure(let error):
+                let aferror = error as! AFError
+                print(aferror.errorDescription ?? "")
+            }
+        })
     }
-    
-    func sendRequest(url: String, parms: Parameters, method: HTTPMethod) {
-        
-        
-        
-//        Alamofire.request(url, method: method, parameters: parms, encoding: JSONEncoding.default)
-//            .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
-//                print("Progress: \(progress.fractionCompleted)")
-//            }
-//            .validate { request, response, data in
-//                // Custom evaluation closure now includes data (allows you to parse data to dig out error messages if necessary)
-//                return .success
-//            }
-//            .responseJSON { response in
-//                debugPrint(response)
-//        }
-        
-        
-//        Alamofire.request(url, method: method, parameters: parms, encoding: JSONEncoding.default).validate { (request, response, data) -> Request.ValidationResult in
-//            guard let data = data else { return .failure(Error.sendDesc) }
-//            return .success
-//            
-//            }.response { (response) in
-//                debugPrint(response)
-//        }
-        
-        
-    }
-    
     
 }
 
+extension HFAlamofire {
+    
+    /// 该区域 封装常用的get与post请求
+    
+    /// get请求
+    static func linkGetInServering(url: URLConvertible, parameters: Parameters?, headers: HTTPHeaders?) -> DataRequest {
+        return linkServering(url: url, method: .get, parameters: parameters, headers: headers)
+    }
+    
+    /// post请求
+    static func linkPostInServering(url: URLConvertible, parameters: Parameters?, headers: HTTPHeaders?) -> DataRequest {
+        return linkServering(url: url, method: .post, parameters: parameters, headers: headers)
+    }
+}
 
+extension HFAlamofire {
+    
+    /// 调用了基础请求，默认JSONEncoding的编码
+    static func linkServering(url: URLConvertible, method: HTTPMethod, parameters: Parameters?, headers: HTTPHeaders?) -> DataRequest {
+        return sendBase(url: url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+    }
+}
+
+let sessionManager: SessionManager = {
+    
+    let manager = SessionManager.default
+    
+    
+    return manager
+}()
+
+extension HFAlamofire {
+    
+    /// 基础请求
+    ///
+    /// - Parameters:
+    ///   - url: 地址 遵循 URLConvertible 的任意对象
+    ///   - method: http 1.1 的请求类型 遵循HTTPMethod 枚举中的对象
+    ///   - parameters: 请求参数 Parameters 类型
+    ///   - encoding: 编码格式
+    ///   - headers: 请求头
+    /// - Returns: 返回 DataRequest 对象
+    static func sendBase(url: URLConvertible, method: HTTPMethod, parameters: Parameters?, encoding: ParameterEncoding, headers: HTTPHeaders?) -> DataRequest {
+        
+        return sessionManager.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
+    }
+}
