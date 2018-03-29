@@ -73,7 +73,13 @@ class ViewController: UIViewController {
     
     @objc func btnAction(btn: UIButton) {
         
-        HFAlamofire.start()
+        let request = Request().add(19).add(1).add(2)
+        
+        
+        debugPrint(request.totalNum)
+        
+        
+//        HFAlamofire.start()
         
 //        let protocolVC = ProtocolViewController()
 //        show(protocolVC, sender: nil)
