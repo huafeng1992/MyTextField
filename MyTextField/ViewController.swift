@@ -67,21 +67,14 @@ class ViewController: UIViewController {
 //            }
 //            .drive(textLabel.rx.text).disposed(by: disposeBag)
         
-        
-        
     }
     
     @objc func btnAction(btn: UIButton) {
         
-//        HFAlamofire.start()
-        
-//        let protocolVC = ProtocolViewController()
-//        show(protocolVC, sender: nil)
+        let testVC = RXTableViewController()
+        show(testVC, sender: nil)
         
         TestAttri.test()
-        
-        
-        
     }
 
 }

@@ -6,7 +6,7 @@ use_frameworks!
     
 pod 'RxSwift'
 pod 'RxCocoa'
-
+pod 'RxDataSources'
 pod 'Alamofire', '~> 4.7.0'
 
 end

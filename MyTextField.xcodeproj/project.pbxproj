@@ -18,11 +18,16 @@
 		DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C121D2015E4B70057A499 /* Main.storyboard */; };
 		DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12202015E4B70057A499 /* Assets.xcassets */; };
 		DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C12222015E4B70057A499 /* LaunchScreen.storyboard */; };
+		DCABE31920770C14006FE5B8 /* 保护代理模式.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCABE31820770C14006FE5B8 /* 保护代理模式.swift */; };
+		DCABE31B20770D82006FE5B8 /* 测试入口.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCABE31A20770D82006FE5B8 /* 测试入口.swift */; };
+		DCABE31E207717BF006FE5B8 /* 代理模式.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCABE31D207717BF006FE5B8 /* 代理模式.swift */; };
 		DCADA3DE205622FC00A64D5A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA3DD205622FC00A64D5A /* Test.swift */; };
 		DCADA3E02056239F00A64D5A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA3DF2056239F00A64D5A /* Utils.swift */; };
 		DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95B202078F200B5DCCB /* ChartsModel.swift */; };
 		DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95C202078F200B5DCCB /* ChartsView.swift */; };
 		DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95D202078F200B5DCCB /* ChartsViewController.swift */; };
+		DCC73093207A7125009E8359 /* RXSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC73092207A7125009E8359 /* RXSwiftTest.swift */; };
+		DCDAFAC5207BB5C70083DF62 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAFAC4207BB5C70083DF62 /* Model.swift */; };
 		DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF179205B61B800536621 /* HFAlamofire.swift */; };
 		EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -43,11 +48,16 @@
 		DC4C12202015E4B70057A499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C12232015E4B70057A499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C12252015E4B70057A499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCABE31820770C14006FE5B8 /* 保护代理模式.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "保护代理模式.swift"; sourceTree = "<group>"; };
+		DCABE31A20770D82006FE5B8 /* 测试入口.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "测试入口.swift"; sourceTree = "<group>"; };
+		DCABE31D207717BF006FE5B8 /* 代理模式.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "代理模式.swift"; sourceTree = "<group>"; };
 		DCADA3DD205622FC00A64D5A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		DCADA3DF2056239F00A64D5A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DCADA95B202078F200B5DCCB /* ChartsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsModel.swift; sourceTree = "<group>"; };
 		DCADA95C202078F200B5DCCB /* ChartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		DCADA95D202078F200B5DCCB /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		DCC73092207A7125009E8359 /* RXSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftTest.swift; sourceTree = "<group>"; };
+		DCDAFAC4207BB5C70083DF62 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DCFDF179205B61B800536621 /* HFAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAlamofire.swift; sourceTree = "<group>"; };
 		EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAttributedStringProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +141,8 @@
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
 				EC4616182074793800BF213F /* NSMutableAttri */,
+				DCC73091207A7115009E8359 /* RXSwift */,
+				DCABE31720770C00006FE5B8 /* DesignPattern */,
 				DC487DE4206BEAB6000E81BD /* hanshu */,
 				DC447AE52067EC3400E27AE4 /* Protocol */,
 				DC42F3A9205BA17C0076004F /* Util */,
@@ -146,6 +158,24 @@
 			path = MyTextField;
 			sourceTree = "<group>";
 		};
+		DCABE31720770C00006FE5B8 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				DCABE31A20770D82006FE5B8 /* 测试入口.swift */,
+				DCABE31C2077179E006FE5B8 /* 代理设计模式 */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		DCABE31C2077179E006FE5B8 /* 代理设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DCABE31820770C14006FE5B8 /* 保护代理模式.swift */,
+				DCABE31D207717BF006FE5B8 /* 代理模式.swift */,
+			);
+			path = "代理设计模式";
+			sourceTree = "<group>";
+		};
 		DCADA95A202078F200B5DCCB /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +184,15 @@
 				DCADA95D202078F200B5DCCB /* ChartsViewController.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		DCC73091207A7115009E8359 /* RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DCC73092207A7125009E8359 /* RXSwiftTest.swift */,
+				DCDAFAC4207BB5C70083DF62 /* Model.swift */,
+			);
+			path = RXSwift;
 			sourceTree = "<group>";
 		};
 		DCFDF178205B619700536621 /* Alamofire */ = {
@@ -284,13 +323,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC73093207A7125009E8359 /* RXSwiftTest.swift in Sources */,
 				DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */,
 				DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */,
 				DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */,
@@ -314,10 +358,14 @@
 				DC42F3AB205BA19C0076004F /* Codable.swift in Sources */,
 				EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */,
 				DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */,
+				DCDAFAC5207BB5C70083DF62 /* Model.swift in Sources */,
 				DC487DE6206BEAC3000E81BD /* hanshushi.swift in Sources */,
+				DCABE31920770C14006FE5B8 /* 保护代理模式.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
+				DCABE31B20770D82006FE5B8 /* 测试入口.swift in Sources */,
 				DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */,
 				DCADA3DE205622FC00A64D5A /* Test.swift in Sources */,
+				DCABE31E207717BF006FE5B8 /* 代理模式.swift in Sources */,
 				DC447AE72067EC7500E27AE4 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +509,7 @@
 				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
+				PRODUCT_BUNDLE_IDENTIFIER = WHF.testrx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -479,7 +527,7 @@
 				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
+				PRODUCT_BUNDLE_IDENTIFIER = WHF.testrx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
