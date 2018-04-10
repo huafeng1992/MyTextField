@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 //            HFAlamofire.start()
 //
 //        }).disposed(by: disposeBag)
-        
+
 
         //        btn.rx.tap.bind {
         //            print("135678765re")
@@ -73,25 +73,18 @@ class ViewController: UIViewController {
     
     @objc func btnAction(btn: UIButton) {
         
-        let request = Request().add(19).add(1).add(2)
-        
-        
-        debugPrint(request.totalNum)
-        
-        
 //        HFAlamofire.start()
         
 //        let protocolVC = ProtocolViewController()
 //        show(protocolVC, sender: nil)
         
+        TestAttri.test()
+        
+        
+        
     }
 
 }
-
-
-
-
-
 
 
 

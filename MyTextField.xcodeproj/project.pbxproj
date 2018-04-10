@@ -24,6 +24,7 @@
 		DCADA95F202078F200B5DCCB /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95C202078F200B5DCCB /* ChartsView.swift */; };
 		DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADA95D202078F200B5DCCB /* ChartsViewController.swift */; };
 		DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF179205B61B800536621 /* HFAlamofire.swift */; };
+		EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DCADA95C202078F200B5DCCB /* ChartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		DCADA95D202078F200B5DCCB /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		DCFDF179205B61B800536621 /* HFAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAlamofire.swift; sourceTree = "<group>"; };
+		EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAttributedStringProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				EC4616182074793800BF213F /* NSMutableAttri */,
 				DC487DE4206BEAB6000E81BD /* hanshu */,
 				DC447AE52067EC3400E27AE4 /* Protocol */,
 				DC42F3A9205BA17C0076004F /* Util */,
@@ -159,6 +162,14 @@
 				DCFDF179205B61B800536621 /* HFAlamofire.swift */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		EC4616182074793800BF213F /* NSMutableAttri */ = {
+			isa = PBXGroup;
+			children = (
+				EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */,
+			);
+			path = NSMutableAttri;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,
 				DC42F3AB205BA19C0076004F /* Codable.swift in Sources */,
+				EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */,
 				DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */,
 				DC487DE6206BEAC3000E81BD /* hanshushi.swift in Sources */,
 				DC4C121A2015E4B70057A499 /* AppDelegate.swift in Sources */,
