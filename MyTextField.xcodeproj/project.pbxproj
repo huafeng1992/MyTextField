@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D94B89CAC4513D6F1CEC1A6 /* Pods_MyTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B23F7FEF8ADF27E88350BFB /* Pods_MyTextField.framework */; };
 		DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */; };
+		DC22CD0920823FA200443C02 /* EmptyErrorSetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22CD0820823FA200443C02 /* EmptyErrorSetProtocol.swift */; };
 		DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3542392058EDDD0015F78D /* RXBaseViewController.swift */; };
 		DC42F3AB205BA19C0076004F /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42F3AA205BA19C0076004F /* Codable.swift */; };
 		DC447AE72067EC7500E27AE4 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC447AE62067EC7500E27AE4 /* Protocol.swift */; };
@@ -36,6 +37,7 @@
 		5CBE177C317AE2786843C054 /* Pods-MyTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.release.xcconfig"; sourceTree = "<group>"; };
 		D2257E5BE6E3E6D36C040326 /* Pods-MyTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0D44DF205A48BE00ABB583 /* HigherOrderFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigherOrderFunction.swift; sourceTree = "<group>"; };
+		DC22CD0820823FA200443C02 /* EmptyErrorSetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyErrorSetProtocol.swift; sourceTree = "<group>"; };
 		DC3542392058EDDD0015F78D /* RXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXBaseViewController.swift; sourceTree = "<group>"; };
 		DC42F3AA205BA19C0076004F /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		DC447AE62067EC7500E27AE4 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC22CD0720823F0C00443C02 /* NetError */ = {
+			isa = PBXGroup;
+			children = (
+				DC22CD0820823FA200443C02 /* EmptyErrorSetProtocol.swift */,
+			);
+			path = NetError;
+			sourceTree = "<group>";
+		};
 		DC42F3A9205BA17C0076004F /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				DC22CD0720823F0C00443C02 /* NetError */,
 				DCC73091207A7115009E8359 /* RXSwift */,
 				DCABE31720770C00006FE5B8 /* DesignPattern */,
 				DC487DE4206BEAB6000E81BD /* hanshu */,
@@ -337,6 +348,7 @@
 				DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */,
 				DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */,
 				DC35423A2058EDDD0015F78D /* RXBaseViewController.swift in Sources */,
+				DC22CD0920823FA200443C02 /* EmptyErrorSetProtocol.swift in Sources */,
 				DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */,
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,

@@ -37,15 +37,17 @@ class RXTableViewController: UIViewController {
         
         
         var modelArray: Array<TestModel> = []
-        for i in 0..<10 {
-            let testModel = TestModel.init()
-            testModel.name = "\(i)"
-            modelArray.append(testModel)
-        }
+//        for i in 0..<100 {
+//            let testModel = TestModel.init()
+//            testModel.name = "\(i)"
+//            modelArray.append(testModel)
+//        }
         
         let data = Observable.of(modelArray)
         
-        
+        tableView.addEmptyView()
+        tableView.tableFooterView = UIView()
+        tableView.addNetErrorView(action: nil)
         
         data.asDriver(onErrorJustReturn: [])
             .drive(tableView.rx.items(cellIdentifier: "Cell")) { (_, contributor, cell) in

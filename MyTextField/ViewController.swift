@@ -23,6 +23,11 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidSuspend, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidCancel, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidComplete, object: nil)
+        
+        
+        view.addEmptyView()
+        view.addNetErrorView(action: nil)
+        view.hideErrorView()
     }
     
     func notificationAction(notifi: Notification) {
