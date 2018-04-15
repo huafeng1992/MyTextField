@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 //            HFAlamofire.start()
 //
 //        }).disposed(by: disposeBag)
-        
+
 
         //        btn.rx.tap.bind {
         //            print("135678765re")
@@ -72,26 +72,17 @@ class ViewController: UIViewController {
 //            }
 //            .drive(textLabel.rx.text).disposed(by: disposeBag)
         
-        
-        
     }
     
     @objc func btnAction(btn: UIButton) {
         
-        DesignPattern.test()
-        
-        
         let testVC = RXTableViewController()
         show(testVC, sender: nil)
         
+        TestAttri.test()
     }
 
 }
-
-
-
-
-
 
 
 

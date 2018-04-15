@@ -7,9 +7,27 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import RxDataSources
 
 class TestModel {
     var name: String?
     var age: Int = 0
+    
+    var childModel: Array<Moodel> = []
+    
+}
+
+//extension TestModel: SectionModelType {
+//    var items: [Int] {
+//        return [1,3,4]
+//    }
+//
+//    typealias Item = Int
+//}
+
+class Moodel: NSObject {
+    var name: String?
 }
 

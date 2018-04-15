@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class RXTableViewController: UIViewController {
     
@@ -22,13 +23,10 @@ class RXTableViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         return tableView
     }()
-//
-//    let data: Observable = { () -> Observable<[TestModel]> in
-//
-//
-//        return data
-//    }()
-//
+
+    var data: Observable<[TestModel]>?
+    var sectionData: Observable<[TestModel]>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "RXSwift"
@@ -37,38 +35,79 @@ class RXTableViewController: UIViewController {
         
         
         var modelArray: Array<TestModel> = []
+<<<<<<< HEAD
 //        for i in 0..<100 {
 //            let testModel = TestModel.init()
 //            testModel.name = "\(i)"
 //            modelArray.append(testModel)
 //        }
+=======
+        for i in 0..<10 {
+            let testModel = TestModel.init()
+            testModel.name = "\(i)"
+            
+            var childArr: Array<Moodel> = []
+            for i in 0..<3 {
+                let model = Moodel()
+                model.name = "childmodel + \(i)"
+                childArr.append(model)
+            }
+            testModel.childModel = childArr
+            
+            modelArray.append(testModel)
+        }
+>>>>>>> 7923ef9e35a3f2f389145ba7ef9aff8904602ecd
         
-        let data = Observable.of(modelArray)
+        data = Observable.of(modelArray)
+        sectionData = Observable.of(modelArray)
         
+<<<<<<< HEAD
         tableView.addEmptyView()
         tableView.tableFooterView = UIView()
         tableView.addNetErrorView(action: nil)
+=======
+        dataSourceAction()
         
-        data.asDriver(onErrorJustReturn: [])
-            .drive(tableView.rx.items(cellIdentifier: "Cell")) { (_, contributor, cell) in
-
-                cell.textLabel?.text = contributor.name
-//                cell.detailTextLabel?.text = contributor.gitHubID
-//                cell.imageView?.image = contributor.image
-            }
-            .disposed(by: disposeBag)
+>>>>>>> 7923ef9e35a3f2f389145ba7ef9aff8904602ecd
         
         tableView.rx.modelSelected(TestModel.self).subscribe(onNext: {
             
             print($0.name! , $0)
             
         }).disposed(by: disposeBag)
-
+    }
+    
+    func dataSourceAction() {
         
+//        let dataSource = RxTableViewSectionedReloadDataSource<TestModel>()
+//        Observable.just([SectionModel(model: "title", items: [1, 2, 3])])
+//            .bind(to: tableView.rx.items(dataSource: dataSource))
+//            .disposed(by: disposeBag)
     }
 }
 
-
+// MARK: - simple
+extension RXTableViewController {
+    
+    func RxasDriver() {
+        // 写法一
+        data?.asDriver(onErrorJustReturn: [])
+            .drive(tableView.rx.items(cellIdentifier: "Cell")) { (index, model, cell) in
+                
+                cell.textLabel?.text = model.name! + "asDriver\(index)"
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    func RxBind() {
+        
+        data?.bind(to: tableView.rx.items(cellIdentifier: "Cell")) { (index, model, cell) in
+            
+            cell.textLabel?.text = model.name! + "bind\(index)"
+            
+            }.disposed(by: disposeBag)
+    }
+}
 
 
 

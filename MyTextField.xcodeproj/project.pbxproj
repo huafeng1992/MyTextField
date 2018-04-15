@@ -30,6 +30,7 @@
 		DCC73093207A7125009E8359 /* RXSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC73092207A7125009E8359 /* RXSwiftTest.swift */; };
 		DCDAFAC5207BB5C70083DF62 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAFAC4207BB5C70083DF62 /* Model.swift */; };
 		DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF179205B61B800536621 /* HFAlamofire.swift */; };
+		EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DCC73092207A7125009E8359 /* RXSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftTest.swift; sourceTree = "<group>"; };
 		DCDAFAC4207BB5C70083DF62 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DCFDF179205B61B800536621 /* HFAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAlamofire.swift; sourceTree = "<group>"; };
+		EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAttributedStringProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
 				DC22CD0720823F0C00443C02 /* NetError */,
+				EC4616182074793800BF213F /* NSMutableAttri */,
 				DCC73091207A7115009E8359 /* RXSwift */,
 				DCABE31720770C00006FE5B8 /* DesignPattern */,
 				DC487DE4206BEAB6000E81BD /* hanshu */,
@@ -209,6 +212,14 @@
 				DCFDF179205B61B800536621 /* HFAlamofire.swift */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		EC4616182074793800BF213F /* NSMutableAttri */ = {
+			isa = PBXGroup;
+			children = (
+				EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */,
+			);
+			path = NSMutableAttri;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,13 +334,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +368,7 @@
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,
 				DC42F3AB205BA19C0076004F /* Codable.swift in Sources */,
+				EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */,
 				DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */,
 				DCDAFAC5207BB5C70083DF62 /* Model.swift in Sources */,
 				DC487DE6206BEAC3000E81BD /* hanshushi.swift in Sources */,
