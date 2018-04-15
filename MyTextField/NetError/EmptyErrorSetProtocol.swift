@@ -23,9 +23,15 @@ enum EmptyErrorSetType {
     }
 }
 
-protocol EmptyErrorSetProtocol {}
+protocol EmptyErrorSetProtocol: NSObjectProtocol {
+    
+}
 
 extension EmptyErrorSetProtocol where Self : UIView {
+
+//    weak var delegate: EmptyErrorSetProtocol {
+//        return self
+//    }
     
     func addEmptyView() {
         addEmptyErrorView(type: .emptyData, title: "暂时没有任何数据,到别处看看吧", action: nil)
@@ -39,14 +45,18 @@ extension EmptyErrorSetProtocol where Self : UIView {
         addEmptyErrorView(type: .networkError, title: "网络遇到问题，刷新试试", action: action)
     }
     
-    
     func hideErrorView() {
-        let views = self.subviews.filter{$0.tag == 300090}
-        for viewItem in views {
-            viewItem.removeFromSuperview()
+        findErrorView(self)
+    }
+    
+    private func findErrorView(_ inView: UIView) {
+        for item in inView.subviews {
+            if item.tag == 300090 {item.removeFromSuperview()}
+            findErrorView(item)
         }
     }
-    func addEmptyErrorView(type: EmptyErrorSetType, title: String?, action: Selector?) {
+    
+    private func addEmptyErrorView(type: EmptyErrorSetType, title: String?, action: Selector?) {
         
         hideErrorView()
         
@@ -59,7 +69,7 @@ extension EmptyErrorSetProtocol where Self : UIView {
         let imageView = UIImageView(image: UIImage(named: type.icon))
         imageView.frame.size = imageView.image?.size ?? CGSize(width: icomViewW, height: icomViewW)
         imageView.contentMode = .center
-        imageView.center = CGPoint(x: emptyView.center.x, y: emptyView.center.y - 60)
+        imageView.center = CGPoint(x: emptyView.center.x, y: emptyView.center.y - 70)
         emptyView.addSubview(imageView)
         
         let tipLabel = UILabel()
@@ -92,16 +102,18 @@ extension EmptyErrorSetProtocol where Self : UIView {
             let reloadButton = UIButton(type: .system)
             reloadButton.frame.size = CGSize(width: 100, height: 36)
             reloadButton.center = CGPoint(x: emptyView.center.x, y: tipLabel.frame.maxY + margin*2)
-            reloadButton.backgroundColor = UIColor(red: 255/255.0, green: 42/255.0, blue: 102/255.0, alpha: 1.0)
+            reloadButton.backgroundColor = .white
             reloadButton.layer.cornerRadius = 5
             reloadButton.layer.borderWidth = 0.5
             reloadButton.layer.masksToBounds = true
-            reloadButton.layer.borderColor = UIColor.init(hex: 0x666666, alpha: 1) as! CGColor
+            let color = "007aff"
+            reloadButton.layer.borderColor = UIColor.init(color).cgColor
             reloadButton.setTitle("重新加载", for: .normal)
-            reloadButton.setTitleColor(UIColor.white, for: .normal)
+            reloadButton.setTitleColor(UIColor.init(color), for: .normal)
             reloadButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
             if action != nil {
-                reloadButton.addTarget(self, action: action!, for: .touchUpInside)
+//                reloadButton.addTarget(self, action: action!, for: .touchUpInside)
+                reloadButton.addTarget(self, action: #selector(reloadErrorAction), for: .touchUpInside)
             }
             emptyView.addSubview(reloadButton)
         }
@@ -110,13 +122,60 @@ extension EmptyErrorSetProtocol where Self : UIView {
 
 extension UIView: EmptyErrorSetProtocol {
     
+    typealias ReloadError = () -> Void
+    
+    @objc func reloadErrorAction() {
+        
+    }
+    
+    
 }
-extension UIColor {
-    //用数值初始化颜色，便于生成设计图上标明的十六进制颜色
-    convenience init(hex: UInt, alpha: CGFloat = 1.0) {
 
-        self.init(red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,
-                  green: CGFloat((hex & 0x00FF00) >> 8) / 255.0,
-                  blue: CGFloat(hex & 0x0000FF) / 255.0, alpha: alpha)
+extension String {
+    /// 将十六进制颜色转换为UIColor
+    func uiColor() -> UIColor {
+        // 存储转换后的数值
+        var red:UInt32 = 0, green:UInt32 = 0, blue:UInt32 = 0
+        
+        // 分别转换进行转换
+        Scanner(string: self[0..<2]).scanHexInt32(&red)
+        
+        Scanner(string: self[2..<4]).scanHexInt32(&green)
+        
+        Scanner(string: self[4..<6]).scanHexInt32(&blue)
+        
+        return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1.0)
+    }
+    
+    /// String使用下标截取字符串
+    /// 例: "示例字符串"[0..<2] 结果是 "示例"
+    subscript (r: Range<Int>) -> String {
+        get {
+            let startIndex = self.index(self.startIndex, offsetBy: r.lowerBound)
+            let endIndex = self.index(self.startIndex, offsetBy: r.upperBound)
+            
+            return self[startIndex..<endIndex]
+        }
+    }
+}
+
+extension UIColor {
+    
+    /// 用十六进制颜色创建UIColor
+    ///
+    /// - Parameter hexColor: 十六进制颜色 (0F0F0F)
+    convenience init(_ hexColor: String) {
+        
+        // 存储转换后的数值
+        var red:UInt32 = 0, green:UInt32 = 0, blue:UInt32 = 0
+        
+        // 分别转换进行转换
+        Scanner(string: hexColor[0..<2]).scanHexInt32(&red)
+        
+        Scanner(string: hexColor[2..<4]).scanHexInt32(&green)
+        
+        Scanner(string: hexColor[4..<6]).scanHexInt32(&blue)
+        
+        self.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1.0)
     }
 }

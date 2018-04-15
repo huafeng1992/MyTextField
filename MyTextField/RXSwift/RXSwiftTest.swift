@@ -35,13 +35,7 @@ class RXTableViewController: UIViewController {
         
         
         var modelArray: Array<TestModel> = []
-<<<<<<< HEAD
-//        for i in 0..<100 {
-//            let testModel = TestModel.init()
-//            testModel.name = "\(i)"
-//            modelArray.append(testModel)
-//        }
-=======
+
         for i in 0..<10 {
             let testModel = TestModel.init()
             testModel.name = "\(i)"
@@ -56,19 +50,17 @@ class RXTableViewController: UIViewController {
             
             modelArray.append(testModel)
         }
->>>>>>> 7923ef9e35a3f2f389145ba7ef9aff8904602ecd
         
         data = Observable.of(modelArray)
         sectionData = Observable.of(modelArray)
         
-<<<<<<< HEAD
-        tableView.addEmptyView()
+
         tableView.tableFooterView = UIView()
-        tableView.addNetErrorView(action: nil)
-=======
-        dataSourceAction()
-        
->>>>>>> 7923ef9e35a3f2f389145ba7ef9aff8904602ecd
+//        tableView.addEmptyView()
+//        tableView.addNetErrorView(action: nil)
+//        tableView.addEmptyView()
+        view.addNetErrorView(action: #selector(dataSourceActionTTT))
+        view.reloadErrorView()
         
         tableView.rx.modelSelected(TestModel.self).subscribe(onNext: {
             
@@ -77,8 +69,9 @@ class RXTableViewController: UIViewController {
         }).disposed(by: disposeBag)
     }
     
-    func dataSourceAction() {
-        
+    
+    func dataSourceActionTTT() {
+        print("1234")
 //        let dataSource = RxTableViewSectionedReloadDataSource<TestModel>()
 //        Observable.just([SectionModel(model: "title", items: [1, 2, 3])])
 //            .bind(to: tableView.rx.items(dataSource: dataSource))
