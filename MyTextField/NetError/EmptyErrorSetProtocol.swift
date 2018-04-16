@@ -23,16 +23,13 @@ enum EmptyErrorSetType {
     }
 }
 
-protocol EmptyErrorSetProtocol: NSObjectProtocol {
+@objc protocol EmptyErrorSetProtocol: NSObjectProtocol {
     
+    func reloadErrorViewAction()
 }
 
 extension EmptyErrorSetProtocol where Self : UIView {
 
-//    weak var delegate: EmptyErrorSetProtocol {
-//        return self
-//    }
-    
     func addEmptyView() {
         addEmptyErrorView(type: .emptyData, title: "暂时没有任何数据,到别处看看吧", action: nil)
     }
@@ -112,24 +109,53 @@ extension EmptyErrorSetProtocol where Self : UIView {
             reloadButton.setTitleColor(UIColor.init(color), for: .normal)
             reloadButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
             if action != nil {
-//                reloadButton.addTarget(self, action: action!, for: .touchUpInside)
-                reloadButton.addTarget(self, action: #selector(reloadErrorAction), for: .touchUpInside)
+                reloadButton.addTarget(self, action: #selector(self.reloadErrorViewAction), for: .touchUpInside)
             }
             emptyView.addSubview(reloadButton)
         }
     }
 }
 
-extension UIView: EmptyErrorSetProtocol {
+class HFTableView: UITableView, EmptyErrorSetProtocol {
     
     typealias ReloadError = () -> Void
+    var reloadError: ReloadError? = nil
     
-    @objc func reloadErrorAction() {
-        
+    @objc func reloadErrorViewAction() {
+        if reloadError != nil {
+            reloadError!()
+        }    
     }
-    
-    
 }
+
+class HFCollectionView: UICollectionView, EmptyErrorSetProtocol {
+    
+    typealias ReloadError = () -> Void
+    var reloadError: ReloadError? = nil
+    
+    @objc func reloadErrorViewAction() {
+        if reloadError != nil {
+            reloadError!()
+        }
+    }
+}
+
+
+
+
+//extension UIView: EmptyErrorSetProtocol {
+//
+//    typealias ReloadError = () -> Void
+//
+//    @objc func reloadErrorAction() {
+//        print("123333")
+//    }
+//
+//     func reloadErrorView() {
+//        print("1233")
+//    }
+//
+//}
 
 extension String {
     /// 将十六进制颜色转换为UIColor

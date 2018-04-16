@@ -521,7 +521,7 @@
 				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WHF.testrx;
+				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -539,7 +539,7 @@
 				DEVELOPMENT_TEAM = 36LDEQHC2A;
 				INFOPLIST_FILE = MyTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WHF.testrx;
+				PRODUCT_BUNDLE_IDENTIFIER = "WHF.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

@@ -16,8 +16,8 @@ class RXTableViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    let tableView: UITableView = {
-        let tableView = UITableView.init(frame: .zero, style: .plain)
+    let tableView: HFTableView = {
+        let tableView = HFTableView.init(frame: .zero, style: .plain)
         tableView.frame = .init(x: 0, y: 64, width: kw, height: kh - 64)
         tableView.backgroundColor = .white
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -59,8 +59,12 @@ class RXTableViewController: UIViewController {
 //        tableView.addEmptyView()
 //        tableView.addNetErrorView(action: nil)
 //        tableView.addEmptyView()
-        view.addNetErrorView(action: #selector(dataSourceActionTTT))
-        view.reloadErrorView()
+//        view.addNetErrorView(action: #selector(dataSourceActionTTT))
+//        view.reloadButton.addTarget(self, action: #selector(dataSourceActionTTT), for: .touchUpInside)
+//        tableView.addNetErrorView(action: #selector(dataSourceActionTTT))
+//        tableView.reloadError = {
+//            print("shuaxin")
+//        }
         
         tableView.rx.modelSelected(TestModel.self).subscribe(onNext: {
             
@@ -101,6 +105,7 @@ extension RXTableViewController {
             }.disposed(by: disposeBag)
     }
 }
+
 
 
 
