@@ -31,6 +31,20 @@
 		DCDAFAC5207BB5C70083DF62 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAFAC4207BB5C70083DF62 /* Model.swift */; };
 		DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDF179205B61B800536621 /* HFAlamofire.swift */; };
 		EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */; };
+		EC54E7B92091A3C10075B7A8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54E7B82091A3C10075B7A8 /* R.generated.swift */; };
+		EC54E7BB2091A7450075B7A8 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7BA2091A7450075B7A8 /* Test.plist */; };
+		EC54E7BE2091A7D10075B7A8 /* TeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC54E7BD2091A7D10075B7A8 /* TeeTableViewCell.swift */; };
+		EC54E7C42091AB090075B7A8 /* tttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7C32091AB090075B7A8 /* tttt.png */; };
+		EC54E7E12091C5DD0075B7A8 /* GdyBkltter1911.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7DC2091C5DC0075B7A8 /* GdyBkltter1911.ttf */; };
+		EC54E7E22091C5DD0075B7A8 /* AveriaLibre-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7DD2091C5DC0075B7A8 /* AveriaLibre-B.ttf */; };
+		EC54E7E32091C5DD0075B7A8 /* AveriaLibre-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7DE2091C5DC0075B7A8 /* AveriaLibre-L.ttf */; };
+		EC54E7E42091C5DD0075B7A8 /* AveriaLibre-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7DF2091C5DC0075B7A8 /* AveriaLibre-BI.ttf */; };
+		EC54E7E52091C5DD0075B7A8 /* AveriaLibre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7E02091C5DD0075B7A8 /* AveriaLibre.ttf */; };
+		EC54E7EB2091C5F20075B7A8 /* Display P3.clr in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7E62091C5F10075B7A8 /* Display P3.clr */; };
+		EC54E7EC2091C5F20075B7A8 /* Unnamed.clr in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7E72091C5F10075B7A8 /* Unnamed.clr */; };
+		EC54E7ED2091C5F20075B7A8 /* NSColorPanelSwatches.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7E82091C5F10075B7A8 /* NSColorPanelSwatches.plist */; };
+		EC54E7EF2091C5F20075B7A8 /* My R.swift colors.clr in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7EA2091C5F20075B7A8 /* My R.swift colors.clr */; };
+		EC54E7F12091C6DE0075B7A8 /* mycolor.color in Resources */ = {isa = PBXBuildFile; fileRef = EC54E7F02091C6DE0075B7A8 /* mycolor.color */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +76,20 @@
 		DCDAFAC4207BB5C70083DF62 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DCFDF179205B61B800536621 /* HFAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAlamofire.swift; sourceTree = "<group>"; };
 		EC4616192074796B00BF213F /* MutableAttributedStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAttributedStringProtocol.swift; sourceTree = "<group>"; };
+		EC54E7B82091A3C10075B7A8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		EC54E7BA2091A7450075B7A8 /* Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
+		EC54E7BD2091A7D10075B7A8 /* TeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeTableViewCell.swift; sourceTree = "<group>"; };
+		EC54E7C32091AB090075B7A8 /* tttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tttt.png; sourceTree = "<group>"; };
+		EC54E7DC2091C5DC0075B7A8 /* GdyBkltter1911.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GdyBkltter1911.ttf; sourceTree = "<group>"; };
+		EC54E7DD2091C5DC0075B7A8 /* AveriaLibre-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-B.ttf"; sourceTree = "<group>"; };
+		EC54E7DE2091C5DC0075B7A8 /* AveriaLibre-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-L.ttf"; sourceTree = "<group>"; };
+		EC54E7DF2091C5DC0075B7A8 /* AveriaLibre-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaLibre-BI.ttf"; sourceTree = "<group>"; };
+		EC54E7E02091C5DD0075B7A8 /* AveriaLibre.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AveriaLibre.ttf; sourceTree = "<group>"; };
+		EC54E7E62091C5F10075B7A8 /* Display P3.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Display P3.clr"; sourceTree = "<group>"; };
+		EC54E7E72091C5F10075B7A8 /* Unnamed.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Unnamed.clr; sourceTree = "<group>"; };
+		EC54E7E82091C5F10075B7A8 /* NSColorPanelSwatches.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NSColorPanelSwatches.plist; sourceTree = "<group>"; };
+		EC54E7EA2091C5F20075B7A8 /* My R.swift colors.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "My R.swift colors.clr"; sourceTree = "<group>"; };
+		EC54E7F02091C6DE0075B7A8 /* mycolor.color */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = mycolor.color; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				DC4C12192015E4B70057A499 /* AppDelegate.swift */,
+				EC54E7B82091A3C10075B7A8 /* R.generated.swift */,
 				DC3542392058EDDD0015F78D /* RXBaseViewController.swift */,
 				DC4C121B2015E4B70057A499 /* ViewController.swift */,
+				EC54E7BD2091A7D10075B7A8 /* TeeTableViewCell.swift */,
+				EC54E7C32091AB090075B7A8 /* tttt.png */,
 				DC22CD0720823F0C00443C02 /* NetError */,
 				EC4616182074793800BF213F /* NSMutableAttri */,
 				DCC73091207A7115009E8359 /* RXSwift */,
@@ -159,7 +190,10 @@
 				DC42F3A9205BA17C0076004F /* Util */,
 				DCFDF178205B619700536621 /* Alamofire */,
 				DCADA3DD205622FC00A64D5A /* Test.swift */,
+				EC54E7BA2091A7450075B7A8 /* Test.plist */,
 				DCADA3DF2056239F00A64D5A /* Utils.swift */,
+				EC54E7D12091C55E0075B7A8 /* Fonts */,
+				EC54E7CA2091C5570075B7A8 /* Colors */,
 				DCADA95A202078F200B5DCCB /* Charts */,
 				DC4C121D2015E4B70057A499 /* Main.storyboard */,
 				DC4C12202015E4B70057A499 /* Assets.xcassets */,
@@ -222,6 +256,30 @@
 			path = NSMutableAttri;
 			sourceTree = "<group>";
 		};
+		EC54E7CA2091C5570075B7A8 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EC54E7F02091C6DE0075B7A8 /* mycolor.color */,
+				EC54E7E62091C5F10075B7A8 /* Display P3.clr */,
+				EC54E7EA2091C5F20075B7A8 /* My R.swift colors.clr */,
+				EC54E7E82091C5F10075B7A8 /* NSColorPanelSwatches.plist */,
+				EC54E7E72091C5F10075B7A8 /* Unnamed.clr */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		EC54E7D12091C55E0075B7A8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EC54E7DD2091C5DC0075B7A8 /* AveriaLibre-B.ttf */,
+				EC54E7DF2091C5DC0075B7A8 /* AveriaLibre-BI.ttf */,
+				EC54E7DE2091C5DC0075B7A8 /* AveriaLibre-L.ttf */,
+				EC54E7E02091C5DD0075B7A8 /* AveriaLibre.ttf */,
+				EC54E7DC2091C5DC0075B7A8 /* GdyBkltter1911.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +293,7 @@
 				DC4C12142015E4B70057A499 /* Resources */,
 				C6C81BC00A3E8A8C85D71370 /* [CP] Embed Pods Frameworks */,
 				8888952EEB4990615CCCB3D7 /* [CP] Copy Pods Resources */,
+				EC54E7B7209182FB0075B7A8 /* R.swift */,
 			);
 			buildRules = (
 			);
@@ -284,8 +343,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC54E7E42091C5DD0075B7A8 /* AveriaLibre-BI.ttf in Resources */,
+				EC54E7E22091C5DD0075B7A8 /* AveriaLibre-B.ttf in Resources */,
+				EC54E7EC2091C5F20075B7A8 /* Unnamed.clr in Resources */,
+				EC54E7BB2091A7450075B7A8 /* Test.plist in Resources */,
+				EC54E7EF2091C5F20075B7A8 /* My R.swift colors.clr in Resources */,
+				EC54E7F12091C6DE0075B7A8 /* mycolor.color in Resources */,
+				EC54E7E12091C5DD0075B7A8 /* GdyBkltter1911.ttf in Resources */,
+				EC54E7E32091C5DD0075B7A8 /* AveriaLibre-L.ttf in Resources */,
+				EC54E7C42091AB090075B7A8 /* tttt.png in Resources */,
+				EC54E7ED2091C5F20075B7A8 /* NSColorPanelSwatches.plist in Resources */,
 				DC4C12242015E4B70057A499 /* LaunchScreen.storyboard in Resources */,
+				EC54E7EB2091C5F20075B7A8 /* Display P3.clr in Resources */,
 				DC4C12212015E4B70057A499 /* Assets.xcassets in Resources */,
+				EC54E7E52091C5DD0075B7A8 /* AveriaLibre.ttf in Resources */,
 				DC4C121F2015E4B70057A499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,22 +406,41 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTextField/Pods-MyTextField-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EC54E7B7209182FB0075B7A8 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/myfile",
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/MyTextField\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -359,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC54E7BE2091A7D10075B7A8 /* TeeTableViewCell.swift in Sources */,
 				DCC73093207A7125009E8359 /* RXSwiftTest.swift in Sources */,
 				DCADA95E202078F200B5DCCB /* ChartsModel.swift in Sources */,
 				DC0D44E0205A48BE00ABB583 /* HigherOrderFunction.swift in Sources */,
@@ -367,6 +458,7 @@
 				DCADA960202078F200B5DCCB /* ChartsViewController.swift in Sources */,
 				DC4C121C2015E4B70057A499 /* ViewController.swift in Sources */,
 				DCADA3E02056239F00A64D5A /* Utils.swift in Sources */,
+				EC54E7B92091A3C10075B7A8 /* R.generated.swift in Sources */,
 				DC42F3AB205BA19C0076004F /* Codable.swift in Sources */,
 				EC46161A2074796B00BF213F /* MutableAttributedStringProtocol.swift in Sources */,
 				DCFDF17A205B61B800536621 /* HFAlamofire.swift in Sources */,

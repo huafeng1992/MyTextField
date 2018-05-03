@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 //import RxSwift
 //import RxCocoa
 
@@ -19,14 +20,28 @@ class ViewController: UIViewController {
         setMainUI(view: view)
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidResume, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidSuspend, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidCancel, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidComplete, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction(notifi:)), name: Notification.Name.Task.DidResume, object: nil)
         
+        let settingsIcon = R.image.招生管家全部权限整理
+        let cell = R.image.tttt()
+        let clr = R.clr.myRSwiftColors()
+        let color = R.clr.myRSwiftColors.warning()
+        
+        let font = R.font.averiaLibreRegular(size: 12)
+        
+        view.backgroundColor = color
+        
+        
+        
+        
+        
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidSuspend, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidCancel, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: Notification.Name.Task.DidComplete, object: nil)
+        buttonArraySnpakit()
     }
     
-    func notificationAction(notifi: Notification) {
+    @objc func notificationAction(notifi: Notification) {
         print(notifi.name)
     }
     
@@ -39,6 +54,8 @@ class ViewController: UIViewController {
         view.addSubview(btn)
         btn.backgroundColor = .green
         btn.addTarget(self, action: #selector(btnAction(btn:)), for: .touchUpInside)
+        
+//        btn.setImage(, for: <#T##UIControlState#>)
         
 //        btn.rx.tap.subscribe(onNext: { (_) in
 //
@@ -78,9 +95,35 @@ class ViewController: UIViewController {
         TestAttri.test()
     }
 
+    
+    
 }
 
 
+extension ViewController {
+    
+    func buttonArraySnpakit() {
+        
+        
+        var buttonArray: Array<UIButton> = []
+        for i in 0..<3 {
+            let button = UIButton()
+            button.setTitle("\(i)", for: .normal)
+            buttonArray.append(button)
+            
+        }
+        
+//        buttonArray.
+//        button.snp.makeConstraints {
+//        }
+        
+        
+        
+        
+        
+    }
+    
+}
 
 
 
